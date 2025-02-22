@@ -7,10 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    PageView: typeof import('./src/components/PageView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     StandardMode: typeof import('./src/components/StandardMode.vue')['default']
     TemperatureCard: typeof import('./src/components/TemperatureCard.vue')['default']
+    VanNavBar: typeof import('vant/es')['NavBar']
     VanSlider: typeof import('vant/es')['Slider']
     WindSpeed: typeof import('./src/components/WindSpeed.vue')['default']
   }
